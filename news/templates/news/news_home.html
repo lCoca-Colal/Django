@@ -1,0 +1,21 @@
+{% extends 'main/layaout.html' %}
+
+{% block title %}Новости про нас{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1> Новости про нас </h1>
+        
+        {% for el in news %}
+            <div class="alert alert-warning">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.anons }}</p>
+            </div>
+        {%endfor%}
+
+
+
+{% endblock %}
+
+
+
